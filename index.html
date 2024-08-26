@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterBrand Design</title>
+    <style>
+        /* Barra de cabeçalho fixa */
+        .header-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #000;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 120px;
+            height: auto;
+        }
+
+        /* Corpo e container */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px 20px; /* Espaço no topo para a barra fixa */
+            background-color: #ffffff;
+        }
+
+        /* Centralização de texto e destaque */
+        .text-center {
+            text-align: center;
+        }
+
+        .highlight-text {
+            color: #D4AF37;
+            font-weight: bold;
+        }
+
+        /* Placeholder do vídeo */
+		.video-container {
+    margin: 20px 0;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+   
+
+        /* Botão de CTA */
+        .cta-button {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .cta-button button {
+            background-color: #D4AF37;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cta-button button:hover {
+            background-color: #b5941a;
+        }
+
+        /* Lista de razões */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Imagem do autor */
+        .author-image img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #000;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 100px 10px 10px;
+            }
+
+            .video-placeholder iframe {
+                height: 250px;
+            }
+
+            .cta-button button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bar">
+        <div class="logo">
+            <img src="Prancheta 1.png" alt="Logo MasterBrand Design">
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Texto de Cabeçalho -->
+        <h1 class="text-center">O <span class="highlight-text">método</span> que faz a sua marca evoluir <span class="highlight-text">sem dores de cabeça</span> e que você não se preocupe com entregas e profissionais desqualificados.</h1>
+
+        <!-- Seção do Vídeo -->
+        <p class="text-center">Assista esse vídeo de 3 minutos e entenda como funciona o <span class="highlight-text">MasterBrand Design</span></p>
+		        <!-- Vídeo incorporado -->
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/8cyEG_-K1DQ?controls=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Botão de CTA -->
+        <div class="cta-button">
+            <button onclick="window.location.href='#';">SOLICITAR ORÇAMENTO</button>
+        </div>
+
+        <!-- Razões para o Funcionamento do MBD -->
+        <h2 class="text-center">Algumas razões pela qual o MBD funciona tão bem:</h2>
+        <ul>
+            <li><strong>Alinhamento Estratégico:</strong> Conecta a identidade visual da marca com os objetivos de negócios, garantindo consistência e impacto.</li>
+            <li><strong>Diferenciação no Mercado:</strong> Cria uma presença única que destaca a empresa da concorrência, atraindo e fidelizando pacientes.</li>
+            <li><strong>Flexibilidade e Escalabilidade:</strong> Permite ajustes e medidas que a empresa cresce, mantendo a relevância e a eficácia da marca.</li>
+        </ul>
+
+        <!-- Imagem do Autor -->
+        <div class="author-image">
+            <img src="img.jpeg" alt="Imagem do autor">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Todos os direitos reservados a Cleisson da Rosa
+    </footer>
+</body>
+</html>
