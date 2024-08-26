@@ -106,10 +106,12 @@
         /* Imagem do autor */
         .author-image img {
             width: 100%;
-            max-width: 400px;
+            max-width: 250px;
+			border-radius: 30px;
             height: auto;
             display: block;
             margin: 20px auto 0;
+		
         }
 
         /* Footer */
@@ -137,6 +139,19 @@
                 font-size: 16px;
             }
         }
+		.reason-text {
+    font-size: 18px; /* Ajuste o tamanho conforme necessário */
+    line-height: 1.6; /* Ajusta a altura da linha para melhorar a legibilidade */
+    font-weight: normal; /* Ajuste o peso da fonte, se necessário */
+}
+		.author-text {
+    font-size: 10px; /* Tamanho pequeno da fonte */
+    color: #9C9191; /* Cor do texto (ajuste conforme necessário) */
+    margin-top: 10px; /* Espaçamento acima do texto */
+	text-align: center;
+	font-family: Arial, bold;
+	
+}
     </style>
 </head>
 <body>
@@ -164,7 +179,7 @@
 
         <!-- Razões para o Funcionamento do MBD -->
         <h2 class="text-center">Algumas razões pela qual o MBD funciona tão bem:</h2>
-        <ul>
+        <ul class="reason-text">
             <li><strong>Alinhamento Estratégico:</strong> Conecta a identidade visual da marca com os objetivos de negócios,<strong> garantindo consistência e impacto.</strong> </li>
             <li><strong>Diferenciação no Mercado:</strong> Cria uma presença única que destaca a empresa da concorrência, <strong>atraindo e fidelizando pacientes.</strong></li>
             <li><strong>Flexibilidade e Escalabilidade:</strong> Permite ajustes e medidas que a empresa <strong>cresce</strong>, mantendo a relevância e a eficácia da marca.</li>
@@ -173,6 +188,7 @@
         <!-- Imagem do Autor -->
         <div class="author-image">
             <img src="img.jpeg" alt="Imagem do autor">
+			 <p class="author-text">Cleisson da Rosa | Identidade visual e Branding</p> <!-- Novo texto adicionado -->
         </div>
     </div>
 
